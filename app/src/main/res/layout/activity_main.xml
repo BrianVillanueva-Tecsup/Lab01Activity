@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tituloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Evaluación!"
+        android:layout_marginBottom="16dp"
+        android:textSize="25dp"
+        />
+
+    <Spinner
+        android:id="@+id/sp01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        ></Spinner>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:id="@+id/pract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Prácticas Teóricas"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+
+        />
+   <TextView
+       android:id="@+id/promT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Prom: "
+        android:layout_marginTop="20dp"
+       android:layout_toRightOf="@+id/pract"
+       android:layout_marginLeft="50dp"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/pracT1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practica 1"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="7dp"/>
+        <EditText
+            android:id="@+id/nota1T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="60dp"
+            android:hint="Nota1"
+            android:layout_toRightOf="@+id/pracT1"
+            />
+
+
+        <TextView
+            android:id="@+id/pracT2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practica 2"
+            android:textSize="20dp"
+            android:layout_below="@+id/pracT1"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/nota2T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="60dp"
+            android:hint="Nota2"
+            android:layout_below="@+id/nota1T"
+            android:layout_toRightOf="@+id/pracT1"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:id="@+id/lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Prácticas Laboratorio"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+
+            />
+        <TextView
+            android:id="@+id/promL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Prom: "
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/lab"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:id="@+id/pracL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practica 1"
+        android:textSize="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="7dp"/>
+    <EditText
+        android:id="@+id/nota1L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="60dp"
+        android:hint="Nota1"
+        android:layout_toRightOf="@+id/pracL1"
+        />
+
+
+    <TextView
+        android:id="@+id/pracL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practica 2"
+        android:textSize="20dp"
+        android:layout_below="@+id/pracL1"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/nota2L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="60dp"
+        android:hint="Nota2"
+        android:layout_below="@+id/nota1L"
+        android:layout_toRightOf="@+id/pracL1"
+        />
+
+    <TextView
+        android:id="@+id/pracL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practica 3"
+        android:textSize="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/pracL2"/>
+    <EditText
+        android:id="@+id/nota3L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="60dp"
+        android:hint="Nota3"
+        android:layout_toRightOf="@+id/pracL3"
+        android:layout_below="@+id/nota2L"
+        />
+
+
+    <TextView
+        android:id="@+id/pracL4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practica 4"
+        android:textSize="20dp"
+        android:layout_below="@+id/pracL3"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/nota4L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="60dp"
+        android:hint="Nota2"
+        android:layout_below="@+id/nota3L"
+        android:layout_toRightOf="@+id/pracL4"
+        />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          >
+
+
+
+        <Button
+            android:id="@+id/botonT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:width="200dp"
+            android:layout_marginTop="100dp"
+            android:hint="CALCULAR"
+            android:onClick="evualuarT"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Promedio total"
+            android:textSize="16dp"
+            android:layout_marginBottom="200dp"
+            android:layout_marginLeft="50dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

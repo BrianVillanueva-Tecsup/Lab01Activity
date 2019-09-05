@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>A: 30%T + 70%L </item>
+        <item>B: 40%T + 60%L </item>
+        <item>C: 50%T + 50%L </item>
+    </string-array>
+
+
+</resources>
